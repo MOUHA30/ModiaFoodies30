@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+img {
+    height: 135px;
+    width: 135px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #f5bf7d;
+    background-color: rgb(110, 168, 249);
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px; 
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 850px;
+}
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+}
+footer{
+    background-color: rgb(110, 168, 249); 
+    border-top: 5px solid #f5bf7d;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+footer .social_icon,{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer . contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li{
+    list-style: none;
+}
+footer .contact li p{
+    list-style: none;
+    font-size: 1.2em;
+    color: #000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer ul{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .contact li a{
+    font-size: 1.2em;
+    color: #000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none; 
+    opacity: 0.75;
+}
+footer .contact li a:hover{
+    opacity: 1.1;
+}
+footer .contact li p:hover{
+    opacity: 1.1;
+}
+@media screen and (max-width: 550px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0 0px 0;
+    }
+    footer > div{
+        margin-bottom: 40px;
+    }
+}
+footer p{
+   color: #000;
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   font-size: 1.1em;
+}
+header{
+    padding: 30px 100px;
+    background: url('images/fauves13_0.jpg');
+    background-size: cover;
+}
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card .right img{
+    height: 300px;
+    width: 400px;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: rgb(110, 168, 249);
+}
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+header h1{
+    border-bottom: 1px solid black;
+    width: 14%;
+    padding-bottom: 5px;
+    opacity: 51;
+}
